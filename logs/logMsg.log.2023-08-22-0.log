@@ -1,0 +1,76 @@
+INFO  2023-08-22 17:56:57[restartedMain] [StartupInfoLogger.java - logStarting] [PhyApplication:51] - Starting PhyApplication using Java 17.0.8 with PID 2688 (C:\Users\kucne\Desktop\projects\back\phy\phy\build\classes\java\main started by kucne in C:\Users\kucne\Desktop\projects\back\phy\phy)
+INFO  2023-08-22 17:56:57[restartedMain] [SpringApplication.java - logStartupProfileInfo] [PhyApplication:640] - The following 1 profile is active: "prod"
+INFO  2023-08-22 17:56:57[restartedMain] [DeferredLog.java - logTo] [DevToolsPropertyDefaultsPostProcessor:250] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+INFO  2023-08-22 17:56:57[restartedMain] [DeferredLog.java - logTo] [DevToolsPropertyDefaultsPostProcessor:250] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+INFO  2023-08-22 17:56:58[restartedMain] [RepositoryConfigurationDelegate.java - multipleStoresDetected] [RepositoryConfigurationDelegate:291] - Multiple Spring Data modules found, entering strict repository configuration mode
+INFO  2023-08-22 17:56:58[restartedMain] [RepositoryConfigurationDelegate.java - registerRepositoriesIn] [RepositoryConfigurationDelegate:138] - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+INFO  2023-08-22 17:56:58[restartedMain] [RepositoryConfigurationExtensionSupport.java - isStrictRepositoryCandidate] [RepositoryConfigurationExtensionSupport:320] - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.phy.Repository.SV_CommonCodeRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+INFO  2023-08-22 17:56:58[restartedMain] [RepositoryConfigurationExtensionSupport.java - isStrictRepositoryCandidate] [RepositoryConfigurationExtensionSupport:320] - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.phy.Repository.SV_UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+INFO  2023-08-22 17:56:58[restartedMain] [RepositoryConfigurationDelegate.java - registerRepositoriesIn] [RepositoryConfigurationDelegate:208] - Finished Spring Data repository scanning in 28 ms. Found 0 JDBC repository interfaces.
+INFO  2023-08-22 17:56:58[restartedMain] [RepositoryConfigurationDelegate.java - multipleStoresDetected] [RepositoryConfigurationDelegate:291] - Multiple Spring Data modules found, entering strict repository configuration mode
+INFO  2023-08-22 17:56:58[restartedMain] [RepositoryConfigurationDelegate.java - registerRepositoriesIn] [RepositoryConfigurationDelegate:138] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+INFO  2023-08-22 17:56:58[restartedMain] [RepositoryConfigurationDelegate.java - registerRepositoriesIn] [RepositoryConfigurationDelegate:208] - Finished Spring Data repository scanning in 25 ms. Found 2 JPA repository interfaces.
+INFO  2023-08-22 17:56:58[restartedMain] [TomcatWebServer.java - initialize] [TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+INFO  2023-08-22 17:56:58[restartedMain] [DirectJDKLog.java - log] [StandardService:173] - Starting service [Tomcat]
+INFO  2023-08-22 17:56:58[restartedMain] [DirectJDKLog.java - log] [StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/10.1.11]
+INFO  2023-08-22 17:56:58[restartedMain] [DirectJDKLog.java - log] [[/api]:173] - Initializing Spring embedded WebApplicationContext
+INFO  2023-08-22 17:56:58[restartedMain] [ServletWebServerApplicationContext.java - prepareWebApplicationContext] [ServletWebServerApplicationContext:291] - Root WebApplicationContext: initialization completed in 1418 ms
+INFO  2023-08-22 17:56:59[restartedMain] [LogHelper.java - logPersistenceUnitInformation] [LogHelper:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+INFO  2023-08-22 17:56:59[restartedMain] [Version.java - logVersion] [Version:44] - HHH000412: Hibernate ORM core version 6.2.6.Final
+INFO  2023-08-22 17:56:59[restartedMain] [Environment.java - <clinit>] [Environment:191] - HHH000406: Using bytecode reflection optimizer
+INFO  2023-08-22 17:56:59[restartedMain] [BytecodeProviderInitiator.java - buildBytecodeProvider] [BytecodeProviderInitiator:53] - HHH000021: Bytecode provider name : bytebuddy
+INFO  2023-08-22 17:56:59[restartedMain] [SpringPersistenceUnitInfo.java - addTransformer] [SpringPersistenceUnitInfo:87] - No LoadTimeWeaver setup: ignoring JPA class transformer
+INFO  2023-08-22 17:56:59[restartedMain] [HikariDataSource.java - getConnection] [HikariDataSource:110] - HikariPool-1 - Starting...
+INFO  2023-08-22 17:56:59[restartedMain] [HikariPool.java - checkFailFast] [HikariPool:565] - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@500d36a3
+INFO  2023-08-22 17:56:59[restartedMain] [HikariDataSource.java - getConnection] [HikariDataSource:123] - HikariPool-1 - Start completed.
+WARN  2023-08-22 17:56:59[restartedMain] [DialectFactoryImpl.java - logSelectedDialect] [deprecation:100] - HHH90000026: MariaDB103Dialect has been deprecated; use org.hibernate.dialect.MariaDBDialect instead
+ERROR 2023-08-22 17:56:59[restartedMain] [AbstractEntityManagerFactoryBean.java - buildNativeEntityManagerFactory] [LocalContainerEntityManagerFactoryBean:426] - Failed to initialize JPA EntityManagerFactory: Entity 'com.phy.Entity.SV_User_Hist' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+WARN  2023-08-22 17:56:59[restartedMain] [AbstractApplicationContext.java - refresh] [AnnotationConfigServletWebServerApplicationContext:616] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'com.phy.Entity.SV_User_Hist' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+INFO  2023-08-22 17:56:59[restartedMain] [HikariDataSource.java - close] [HikariDataSource:350] - HikariPool-1 - Shutdown initiated...
+INFO  2023-08-22 17:56:59[restartedMain] [HikariDataSource.java - close] [HikariDataSource:352] - HikariPool-1 - Shutdown completed.
+INFO  2023-08-22 17:56:59[restartedMain] [DirectJDKLog.java - log] [StandardService:173] - Stopping service [Tomcat]
+INFO  2023-08-22 17:56:59[restartedMain] [ConditionEvaluationReportLogger.java - logMessage] [ConditionEvaluationReportLogger:82] - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+ERROR 2023-08-22 17:56:59[restartedMain] [SpringApplication.java - reportFailure] [SpringApplication:824] - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'com.phy.Entity.SV_User_Hist' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1155)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at com.phy.PhyApplication.main(PhyApplication.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.hibernate.AnnotationException: Entity 'com.phy.Entity.SV_User_Hist' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+	at org.hibernate.boot.model.internal.InheritanceState.determineDefaultAccessType(InheritanceState.java:279)
+	at org.hibernate.boot.model.internal.InheritanceState.getElementsToProcess(InheritanceState.java:215)
+	at org.hibernate.boot.model.internal.InheritanceState.postProcess(InheritanceState.java:160)
+	at org.hibernate.boot.model.internal.EntityBinder.handleIdentifier(EntityBinder.java:293)
+	at org.hibernate.boot.model.internal.EntityBinder.bindEntityClass(EntityBinder.java:228)
+	at org.hibernate.boot.model.internal.AnnotationBinder.bindClass(AnnotationBinder.java:417)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:255)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:275)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:318)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1380)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1451)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1817)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
+	... 19 common frames omitted
